@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+header {
+    position: fixed;
+    top: 0; /* Ajusta la posición vertical del componente */
+    left: 0; /* Ajusta la posición horizontal del componente */
+    z-index: 999; /* Ajusta el nivel de apilamiento del componente */
+    width: 100%; /* Ajusta el ancho del componente */
+  }
+
+.header {
+  background-color: black; /* Color de fondo original */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 1s ease; /* Transición suave */
+}
+
