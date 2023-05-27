@@ -1,16 +1,41 @@
-<header>
-  <app-navbar></app-navbar>
-</header>
-<section id="sectionBanner">
-  <app-banner></app-banner>
-</section>
-<section id="sectionProject">
-  <app-project></app-project>
-</section>
-<section id="sectionSkill">
-  <app-skill></app-skill>
-</section>
-<section id="sectionContact">
+<!-- <section id="sectionContact">
   <app-contact></app-contact>
-</section>
-<app-footer></app-footer>
+</section> -->
+
+<!-- <app-navbar></app-navbar> -->
+
+<img class="logo" src="assets/img/log2.png" alt="logo" id="imgLoader">
+<div id="loader"> </div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
+  <app-navbar></app-navbar>
+  <app-header></app-header>
+
+  <!-- Skill Section -->
+  <section class="page-section habilidadColor text-black mb-0" id="about">
+    <app-skill></app-skill>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <app-project></app-project>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section contactoColor" id="contact">
+    <app-contact></app-contact>
+  </section>
+  <!-------------------------------------- 
+      FOOTER
+  --------------------------------------->
+  <app-footer></app-footer>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div> 
+
+
