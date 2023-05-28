@@ -1,0 +1,133 @@
+
+.container-presentation{
+    height: 100vh;
+}
+.container-presentation-img{
+    position: relative;
+    top: 20vh;
+    text-align: center;
+}
+
+.card-presentation {
+    position: relative;
+    top: 20vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 1rem;
+    background: rgb(180 180 180 / 34%);
+    box-shadow: 6px 6px 13px 1px rgba(205, 203, 203, 0.7) ;
+}
+
+.card-title{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.card-description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    text-align: justify;
+}
+
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  #typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end);
+  }
+
+  .plane {
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+  }
+  .plane.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotateX(60deg) rotateZ(-30deg);
+    -webkit-animation: rotate 80s infinite linear;
+            animation: rotate 80s infinite linear;
+  }
+  .plane.main .circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    transform-style: preserve-3d;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 60px white, inset 0 0 60px gray;
+  }
+  .plane.main .circle::before, .plane.main .circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 60px 2px rgb(18, 14, 15);
+  }
+  .plane.main .circle::before {
+    transform: translateZ(-90px);
+  }
+  .plane.main .circle::after {
+    transform: translateZ(90px);
+  }
+  .plane.main .circle:nth-child(1) {
+    transform: rotateZ(72deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(2) {
+    transform: rotateZ(144deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(3) {
+    transform: rotateZ(216deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(4) {
+    transform: rotateZ(288deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(5) {
+    transform: rotateZ(360deg) rotateX(63.435deg);
+  }
+  
+  @-webkit-keyframes rotate {
+    0% {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  

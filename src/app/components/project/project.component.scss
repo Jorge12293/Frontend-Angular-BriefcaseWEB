@@ -1,0 +1,22 @@
+.container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px 15px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    background-color:rgba(27, 26, 26, 0.8) ;
+    box-shadow: 6px 6px 13px 1px rgba(128, 127, 127, 0.8);
+}
+
+.container-title-text{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container-title-icon{
+    color: white;
+    font-size: 40px;
+}

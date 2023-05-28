@@ -1,5 +1,6 @@
 
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,20 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  isLoader:boolean=false;
+ // isLoader:boolean=true;
+  private timeoutId: any;
+  
   constructor() { }
 
   ngOnInit(): void {
+    // this.timeoutId = setTimeout(() => {
+    //   this.isLoader=false;
+    // }, 2000); 
   }
 
-
+  ngOnDestroy(): void {
+    clearTimeout(this.timeoutId);
+  }
 
 }

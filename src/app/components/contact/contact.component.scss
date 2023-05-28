@@ -1,0 +1,32 @@
+.container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px 15px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 6px 6px 13px 1px rgba(22, 21, 21, 0.5);
+}
+
+.container-title-text{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.container-title-icon{
+    font-size: 40px;
+}
+
+.container-contact{
+    color: white;
+    background-color: #2d2d3a;
+    box-shadow: 6px 6px 13px 1px rgba(22, 21, 21, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.fa-whatsapp{
+    font-size: 20px;
+    padding: 0px;
+}

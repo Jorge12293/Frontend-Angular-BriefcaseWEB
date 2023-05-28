@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './core/navbar/navbar.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
+import { LoaderComponent } from './components/loader/loader.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,14 +23,16 @@ import { HeaderComponent } from './components/header/header.component';
     ProjectComponent,
     ContactComponent,
     FooterComponent,
-    BannerComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    LoaderComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
